@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "306068095668",
+    "project_id": "booksreader-bc5a5",
+    "storage_bucket": "booksreader-bc5a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306068095668:android:d1cbe6f32b0019f4c08de1",
+        "android_client_info": {
+          "package_name": "com.example.favbookscompose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKCz97mKaS7zT_KWyyZHAFAlBZt-tmwho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
