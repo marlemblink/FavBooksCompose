@@ -22,7 +22,8 @@ jobs:
         uses: gradle/gradle-build-action@v3
       - name: Build app #compile the app
         run: ./gradlew assemble #launch script of the gradle in the server no local, no block the pc, assemble like run that everything works well
-
+      - name: Running PHPUnit Tests #fix error gradle exit code 126 permissions
+        run: script.sh
 
 
 
