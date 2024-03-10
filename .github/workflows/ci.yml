@@ -10,18 +10,18 @@ on:
 jobs:
   build:
     runs_on: ubuntu-latest #steps to do the build with parameters
-  steps:
-    - uses: actions/checkout@v3 #library, prepare the project´s workflow
-    - name: set up JDK 11 #add name to allow use java to execute process to the gradle in start the pipeline and see if the process works well
-      uses: actions/setup-java@v3 #set up java automatically with configurations
-      width:
-        java-version: '11'
-        distribution: 'temurin'
-        cache: gradle
-    - name: Set Up Gradle #execute all the tasks
-      uses: gradle/gradle-build-actions@v2
-    - name: Build app #compile the app
-      run: ./gradlew assemble #launch script of the gradle in the server no local, no block the pc, assemble like run that everything works well
+    steps:
+      - uses: actions/checkout@v3 #library, prepare the project´s workflow
+      - name: set up JDK 11 #add name to allow use java to execute process to the gradle in start the pipeline and see if the process works well
+        uses: actions/setup-java@v3 #set up java automatically with configurations
+        width:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: gradle
+      - name: Set Up Gradle #execute all the tasks
+        uses: gradle/gradle-build-actions@v2
+      - name: Build app #compile the app
+        run: ./gradlew assemble #launch script of the gradle in the server no local, no block the pc, assemble like run that everything works well
 
 
 
