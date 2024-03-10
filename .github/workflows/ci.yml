@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v3 #library, prepare the project´s workflow
       - name: set up JDK 11 #add name to allow use java to execute process to the gradle in start the pipeline and see if the process works well
         uses: actions/setup-java@v3 #set up java automatically with configurations
-        width:
+        with:
           java-version: '11'
           distribution: 'temurin'
           cache: gradle
