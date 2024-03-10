@@ -9,7 +9,7 @@ on:
     #specify the kind of SO this case ubuntu - android
 jobs:
   build:
-    runs_on: ubuntu-latest #steps to do the build with parameters
+    runs-on: ubuntu-latest #steps to do the build with parameters
     steps:
       - uses: actions/checkout@v3 #library, prepare the project´s workflow
       - name: set up JDK 11 #add name to allow use java to execute process to the gradle in start the pipeline and see if the process works well
