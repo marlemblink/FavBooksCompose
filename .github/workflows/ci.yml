@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       - name: Set Up Gradle #execute all the tasks
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/gradle-build-action@v3
       - name: Build app #compile the app
         run: ./gradlew assemble #launch script of the gradle in the server no local, no block the pc, assemble like run that everything works well
 
